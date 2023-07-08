@@ -5,7 +5,9 @@
       padding: 10px;
       margin: 20px;
     }
-  
+    .CategoryBar li:hover {
+        color: rgb(16, 89, 87); /* 원하는 폰트 색깔로 변경 */
+      }
     li {
       margin: auto;
       display: flex; /* 가로 정렬을 위한 설정 */
