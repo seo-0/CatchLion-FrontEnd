@@ -15,6 +15,7 @@ function App() {
           <Route element ={<Login />} />
         </Routes>
       {/* </header> */}
+      <Detail/>
     </div>
   );
 }
