@@ -1,0 +1,17 @@
+.CategoryBar {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 10px;
+      margin: 20px;
+    }
+  
+    li {
+      margin: auto;
+      display: flex; /* 가로 정렬을 위한 설정 */
+      align-items: center; 
+      font-size: large;
+      font-weight: bold;
+      
+    }
+  }
