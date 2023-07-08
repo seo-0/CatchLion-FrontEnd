@@ -4,10 +4,6 @@ import React from "react";
 const Login=()=>{
     return(
         <div>
-            
-        </div>
-
-        <div>
             <h1>login view</h1>
         </div>
 
