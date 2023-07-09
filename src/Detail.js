@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import "./Detail.css";
 
@@ -34,7 +34,7 @@ const Detail=()=>{
                 </div>
             </div><br/>
             <Btndiv>
-                <Link to="/register"><button>즉시 지원</button></Link>
+                <button>즉시 지원</button>
             </Btndiv>
         </div>
     );

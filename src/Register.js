@@ -2,7 +2,7 @@
 // import Detail from "./Detail";
 import React from "react";
 import "./Register.css";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Register=()=>{
     return(
