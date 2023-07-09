@@ -1,5 +1,19 @@
+.registerForm{
+    margin: 0 auto;
+    width: 80%;
+    height: 340vh;
+}
 .inputRegi{
-    width: 60%;
+    width: 70%;
     height: 30vh;
     border-color: rgb(249, 165, 7);
+}
+#registersbtn{
+    border: none;
+    background-color: rgb(249, 165, 7);
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
 }
