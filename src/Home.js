@@ -12,16 +12,17 @@ const Home = () => {
       .get('http://서버:8080/jobs')
       .then((response) => setJobPostings(response.data))
       .catch((error) => {
-        console.error('Error fetching job postings:', error);
+        console.error('기업정보를 불러오는데 실패:', error);
       });
   }, []);
 
   return (
     <div>
-      <h1>사자를 잡아라! With CatchLion!</h1>
       <div className="slogan-container">
+        <h2>사자를 잡<span>(job)</span>아라! With CatchLion!</h2>
         <img src={slogan} alt="슬로건 이미지" />
       </div>
+
       <div className="job-grid">
         {jobPostings.map((jobPosting) => (
           <Link to={`/Detail/${jobPosting.id}`} key={jobPosting.id} className="job-card">
@@ -30,6 +31,7 @@ const Home = () => {
           </Link>
         ))}
       </div>
+
       {/* <div onClick={goDetail}>
         useNavigate(()=>{
 

@@ -1,25 +1,34 @@
 .slogan-container {
     position: relative;
-    width: auto;
-    height: 200px; /* 이미지와 텍스트를 겹칠 영역의 크기를 지정하세요 */
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   .slogan-container img {
-    position:relative;
+    max-width: 100%;
+    height: 150px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
-  h1{
-    justify-content: center;
-    align-content: center;
+  
+  .slogan-container h2 {
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 4px 4px hsl(60, 100%, 58%);
+    z-index: 1;
 
+    span{
+    color: rgb(2, 97, 2);
+    }
   }
-
+  
   .App-header {
     background-color: #282c34;
     padding: 20px;
-    color: white;
+    color: rgb(104, 7, 7);
   }
   
   .job-grid {
@@ -29,14 +38,14 @@
   }
   
   .job-card {
-    background-color: #f0f0f0;
+    background-color: #9c5555;
     padding: 20px;
     border-radius: 5px;
     cursor: pointer;
   }
   
   .job-card:hover {
-    background-color: #d9d9d9;
+    background-color: #793131;
   }
   
   .job-card h3 {
