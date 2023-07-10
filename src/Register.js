@@ -127,7 +127,7 @@ const Register = () => {
         <p><span>{formData.additionalComments.length}</span>/1000자<span></span></p>
         <br />
         <br />
-        <button type="submit" className="hi">
+        <button type="submit" className="hi" id="registersbtn">
           자소서 제출
         </button>
       </form>
