@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import slogan from './image/slogan.jpg';
+import Detail from "./Detail";
 import './Home.scss';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 
 const Home = () => {
   const [jobPostings, setJobPostings] = useState([]);
 
   useEffect(() => {
     axios
-      .get('http://서버:8080/jobs')
-      .then((response) => setJobPostings(response.data))
+      .get('http://3.34.2.126:8080/jobs')
+      .then((response) => setJobPostings(response.data.jobList))
       .catch((error) => {
         console.error('기업정보를 불러오는데 실패:', error);
       });
@@ -23,14 +24,17 @@ const Home = () => {
         <img src={slogan} alt="슬로건 이미지" />
       </div>
 
-      <div className="job-grid">
+    <div className="job-grid">
         {jobPostings.map((jobPosting) => (
-          <Link to={`/Detail/${jobPosting.id}`} key={jobPosting.id} className="job-card">
-            <h3>{jobPosting.title}</h3>
-            <p>회사: {jobPosting.company}</p>
-          </Link>
+          <Link to={`/Detail/${jobPosting.jobId}`} key={jobPosting.jobId} className="job-card">
+                <h3>{jobPosting.title}</h3>
+                <p>채용기업: {jobPosting.name}</p>
+                <p>지원마감일: {jobPosting.deadline}</p>
+                <p>기업위치: {jobPosting.location}</p>
+
+            </Link>
         ))}
-      </div>
+    </div>
 
       {/* <div onClick={goDetail}>
         useNavigate(()=>{
