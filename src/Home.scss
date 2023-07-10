@@ -1,3 +1,9 @@
+// @font-face {
+//     font-family: 'CustomFont';
+//     src: url('/fonts/IBMPlexSansKR-Regular.ttf') format('woff2'),
+//         //  url('/fonts/font-file.woff') format('woff');
+//   }
+
 .slogan-container {
     position: relative;
     text-align: center;
@@ -25,12 +31,6 @@
     }
   }
   
-  .App-header {
-    background-color: #282c34;
-    padding: 20px;
-    color: rgb(104, 7, 7);
-  }
-  
   .job-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -38,32 +38,34 @@
   }
   
   .job-card {
-    background-color: #9c5555;
+    text-decoration : none;
+    background-color: rgb(172, 255, 157);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-  }
+    
+    h4{
+        margin: 0;
+        color: rgb(70, 70, 224);
+    }
+    h3 {
+    //    font-style: italic;
+        margin-bottom: 10px;
+        color: black;
+      }
+    p {
+        margin: 0;
+        color: rgb(73, 73, 73);
+    }
+
+    span {
+        color: blue;
+    }
+    }
   
   .job-card:hover {
-    background-color: #793131;
+    background-color: rgb(178, 237, 90);
   }
-  
-  .job-card h3 {
-    margin-bottom: 10px;
-  }
-  
-  .job-card p {
-    margin: 0;
-  }
-  
-  
-  
-//   .slogan-text {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     color: rgb(252, 96, 5);
-//     font-size: 24px;
-//   }
+
+ 
   

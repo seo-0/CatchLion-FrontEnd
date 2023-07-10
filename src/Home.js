@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import slogan from './image/slogan.jpg';
-import Detail from "./Detail";
 import './Home.scss';
 import { Link, } from 'react-router-dom';
 
@@ -36,12 +35,7 @@ const Home = () => {
         ))}
     </div>
 
-      {/* <div onClick={goDetail}>
-        useNavigate(()=>{
 
-        }) 디테일.js 부분이랑 연결시키는 코드
-
-      </div> */}
     </div>
   );
 };

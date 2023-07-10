@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/IBMPlexSansKR-Regular.ttf') format('woff2'),
+        //  url('/fonts/font-file.woff') format('woff');
+  }
+  
+  .slogan-container h2 {
+    font-family: 'CustomFont', sans-serif;
+  }
+  
