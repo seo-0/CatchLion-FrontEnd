@@ -22,12 +22,13 @@ const Deadlinediv = styled.div`
 
 const Detail = () => {
   const { jobId } = useParams();
+  console.log(jobId);
   const [detailInfo, setDetailInfo] = useState(null);
 
   useEffect(() => {
     const fetchDetailData = async () => {
       try {
-        const response = await axios.get(`http://3.34.2.126:8080/jobs/2`);
+        const response = await axios.get(`http://3.34.2.126:8080/jobs/${jobId}`);
         setDetailInfo(response.data.findDetailDto);
       } catch (error) {
         console.error("채용 공고 디테일을 가져오는 도중 에러 발생", error);
