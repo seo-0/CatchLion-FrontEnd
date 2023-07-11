@@ -1,7 +1,8 @@
 .Header {
+    margin: 50px;
     display: flex;
     align-items: center;
-    font-size: 17px; /* 원하는 폰트 크기로 조정 */
+    font-size: 20px; /* 원하는 폰트 크기로 조정 */
     h1 {
         background: linear-gradient(to right,red, orange, green, blue, indigo, violet);
         -webkit-background-clip: text;
@@ -13,27 +14,40 @@
       background-color: aliceblue;
       border-width: 2.5px;
       width:500px; /* 원하는 텍스트 박스 너비로 조정 */
-      margin-left:20px;
-      margin-right: 10px;
-      height: 30px;
+      margin-left: 30px;
+      margin-right: 20px;
+      height: 40px;
       border-radius: 20px;
     }
     input[type="text"]::placeholder {
-        padding: 10px;
+        padding: 13px;
+        font-size: 16px;
     }
     input[type="button"] {
-        border: 2px solid rgb(216, 91, 14);
+        border: 2px solid rgb(0, 0, 0);
         background-color: transparent;
-        border-width: 32x;
+        border-width: 2px;
         width: 60px; 
-        height: 35px;
-        border-radius: 10px;
+        height: 45px;
+        border-radius: 40px;
       }
     img{
+        vertical-align: bottom;
         width: 45px;
         height: 45px;
-        margin-right: 10px;
+        margin-right: 15px;
         margin-left: 30px;
     }
-  }
+    button{
+      color: rgb(120, 180, 0);
+      font-size: 25px;
+      font-family:'Times New Roman', Times, serif;
+      border: solid rgba(12, 138, 255, 0.532);
+      background-color: rgba(211, 234, 255, 0.436);
+      border-radius: 20px;
+      margin-left: 400px;
+      padding: 10px;
+    }
+}  
+
   

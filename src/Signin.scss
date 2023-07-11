@@ -1,0 +1,52 @@
+.signin-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signin-container h2 {
+    text-align: center;
+    color: orange;
+    margin-bottom: 20px;
+  }
+  
+  .signin-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signin-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .signin-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signin-container button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signin-container p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signin-container p a {
+    color: orange;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  

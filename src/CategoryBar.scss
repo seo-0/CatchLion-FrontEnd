@@ -1,19 +1,24 @@
 .CategoryBar {
-    ul {
-      display: flex;
-      list-style: none;
-      padding: 10px;
-      margin: 20px;
-    }
-    .CategoryBar li:hover {
-        color: rgb(16, 89, 87); /* 원하는 폰트 색깔로 변경 */
-      }
-    li {
-      margin: auto;
-      display: flex; /* 가로 정렬을 위한 설정 */
-      align-items: center; 
-      font-size: large;
-      font-weight: bold;
-      
-    }
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin: 20px;
   }
+
+  li:hover {
+    color: rgb(62, 29, 208); /* 원하는 폰트 색깔로 변경 */
+    text-decoration: none;
+  }
+
+  li {
+    color: rgb(0, 0, 0);
+    margin: auto;
+    display: flex; /* 가로 정렬을 위한 설정 */
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

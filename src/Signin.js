@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Login.scss';
+import './Signin.scss';
+import './Login';
 
-const Login = () => {
+const Signin = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
+    confirmPassword: '',
   });
 
   const handleChange = (e) => {
@@ -18,12 +20,12 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // 로그인 처리 로직을 추가하세요
+    // 회원가입 처리 로직을 추가하세요
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
+    <div className="signin-container">
+      <h2>Sign up</h2>
       <form onSubmit={handleSubmit}>
         <label>Email</label>
         <input
@@ -41,13 +43,21 @@ const Login = () => {
           onChange={handleChange}
           required
         />
-        <button type="submit">Login</button>
+        <label>Confirm Password</label>
+        <input
+          type="password"
+          name="confirmPassword"
+          value={formData.confirmPassword}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">Sign up</button>
       </form>
       <p>
-        Don't have an account? <Link to="/signin">Sign up</Link>
+        Already have an account? <Link to="/login">Login</Link>
       </p>
     </div>
   );
 };
 
-export default Login;
+export default Signin;

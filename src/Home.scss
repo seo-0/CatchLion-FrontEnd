@@ -1,71 +1,124 @@
-// @font-face {
-//     font-family: 'CustomFont';
-//     src: url('/fonts/IBMPlexSansKR-Regular.ttf') format('woff2'),
-//         //  url('/fonts/font-file.woff') format('woff');
-//   }
-
-.slogan-container {
+body{
+     overflow-x: hidden;
+    overflow-y: auto;
+    margin: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.slogan-container { 
     position: relative;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    
   }
-  
+
   .slogan-container img {
+    vertical-align: bottom;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 50px;
     max-width: 100%;
-    height: 150px;
-    width: 100%;
+    height: 250px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
   }
   
-  .slogan-container h2 {
+  .slogan-container h1 {
+    font-family:'Times New Roman', Times, serif;
     position: absolute;
-    top: 25%;
-    left: 27%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 4px 4px hsl(60, 100%, 58%);
+    top: 45%;
+    left: 55%;
+    transform: translate(-60%, -60%);
+    font-size: 36px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 239, 91, 0.619);
     z-index: 1;
+    // font-family: 'Open Sans', sans-serif;
 
     span{
-    color: rgb(2, 97, 2);
+    color: rgb(255, 60, 0);
     }
   }
   
   .job-grid {
+    margin-left: 50px;
+    margin-right: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 50px;
   }
   
   .job-card {
-    text-decoration : none;
-    background-color: rgb(172, 255, 157);
-    padding: 20px;
+    text-decoration: none;
+    background-color: #fff;
+    margin: 0;
     border-radius: 10px;
-    cursor: pointer;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(250, 120, 73);
     
-    h4{
-        margin: 0;
-        color: rgb(70, 70, 224);
-    }
-    h3 {
-    //    font-style: italic;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.292);
+    transition: transform 0.2s ease;
+
+    padding: 20px;
+    
+    h3{
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        font-size: 23px;
+        color: rgb(0, 0, 255);
         margin-bottom: 10px;
-        color: black;
-      }
+    }
+    h4{
+        padding: 5px;
+        margin: 0px;
+    }
     p {
         margin: 0;
-        color: rgb(73, 73, 73);
+        color: rgb(255, 0, 119);
     }
 
     span {
-        color: blue;
+        color: rgb(0, 0, 199);
     }
-    }
+}
   
   .job-card:hover {
-    background-color: rgb(178, 237, 90);
+    transform: translateY(-5px);
+    background-color: rgba(239, 255, 63, 0.651);
   }
 
+  .footer {
+    margin: 100px 3px 0px 5px;  
+    background-color: #f4f4f4;
+    padding: 30px;
+    text-align: center;
+
+    nav{
+        img{
+            vertical-align: bottom;
+            height: 25px;
+            width: 25px;
+            padding-top: 10px;
+            padding-right: 8px;
+        }
+        a {
+            color: green;
+            text-decoration: none;
+            font-size: larger;
+          }
+          
+          a:focus,
+          a:hover {
+            text-decoration: underline orangered;
+            display: inline-block;
+            color: rgb(255, 106, 0);
+            transform: translateY(-2px);
+            transition: 1s;
+          }
+    }
+  }
  
   

@@ -5,6 +5,7 @@ import Home from "./Home";
 import Register from "./Register";
 import Login from "./Login";
 import Detail from "./Detail";
+import Signin from './Signin';
 
 import Header from './Header';
 import CategoryBar from './CategoryBar';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Detail/:jobId" element ={<Detail />} />
           <Route path="/Register" element ={<Register />} />
           <Route path="/Login" element ={<Login />} />
+          <Route path="/Signin" element={Signin } />
         </Routes>
     </div>
   );
