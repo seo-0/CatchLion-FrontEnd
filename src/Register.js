@@ -3,37 +3,48 @@ import "./Register.css";
 import axios from "axios";
 
 const Register = () => {
-  const [formData, setFormData] = useState({
-    motivation: "",
-    growthProcess: "",
-    strengthsAndWeaknesses: "",
-    crisisManagement: "",
-    proactiveWork: "",
-    futurePlans: "",
-    additionalComments: "",
-  });
+    const [formData, setFormData] = useState({
+      motivation: "",
+      growthProcess: "",
+      strengthsAndWeaknesses: "",
+      crisisManagement: "",
+      proactiveWork: "",
+      futurePlans: "",
+      additionalComments: "",
+    });
+  
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData((prevState) => ({
+        ...prevState,
+        [name]: value,
+      }));
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      // 여러 질문에 해당하는 답변들을 합쳐서 content로 만듦
+      const content = Object.values(formData).join("\n");
+  
+      axios
+        .post("http://3.34.2.126:8080/job/2/cover-letter", {
+          id: formData.id,
+          content: content,
+        })
+        .then((response) => {
+          alert("귀하의 지원서가 성공적으로 제출되었습니다.");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await axios.post("http://3.34.2.126:8080/job/2/cover-letter", formData);
-      console.log(response.data);
-      // 성공적으로 제출되었을 때 처리할 작업을 수행하세요.
-    } catch (error) {
-      console.error("지원서 제출 중에 오류가 발생했습니다.", error);
-      // 오류 발생 시 처리할 작업을 수행하세요.
-    }
-  };
-
+          console.log("지원서가 성공적으로 제출되었습니다.");
+          console.log("전송된 ID:", formData.id);
+          console.log("전송된 내용:", content);        
+        })
+        .catch((error) => {
+            alert("귀하의 지원서 제출 중 오류가 발생했습니다. 다시 시도하세요.");
+            console.error("지원서 제출 중 오류가 발생했습니다:", error);
+          // 오류 처리를 위한 추가 작업을 처리하십시오
+        });
+    };
   return (
     <div>
       <h2>지원하기</h2>
