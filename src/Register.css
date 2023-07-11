@@ -1,12 +1,20 @@
 .registerForm{
     margin: 0 auto;
     width: 80%;
-    height: 340vh;
+    height: 360vh;
 }
 .inputRegi{
     width: 70%;
     height: 30vh;
     border-color: rgb(249, 165, 7);
+}
+.checkLetter{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.writelen{
+    color: rgb(18, 133, 227);
 }
 #registersbtn{
     border: none;
