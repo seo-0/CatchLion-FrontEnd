@@ -1,13 +1,14 @@
 .signin-container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 60px;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.199);
+}
   
   .signin-container h2 {
+    font-size: 30px;
     text-align: center;
     color: orange;
     margin-bottom: 20px;
@@ -19,6 +20,7 @@
   }
   
   .signin-container label {
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
   }
@@ -26,20 +28,22 @@
   .signin-container input {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
   }
   
   .signin-container button {
-    padding: 10px 20px;
+    font-size: 17px;
+    padding: 15px 20px;
     background-color: orange;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
   .signin-container p {
+    font-size: 20px;
     text-align: center;
     margin-top: 20px;
   }
@@ -47,6 +51,6 @@
   .signin-container p a {
     color: orange;
     font-weight: bold;
+    font-size: 20px;
     text-decoration: underline;
   }
-  

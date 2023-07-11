@@ -27,7 +27,7 @@ const Signin = () => {
     <div className="signin-container">
       <h2>Sign up</h2>
       <form onSubmit={handleSubmit}>
-        <label>Email</label>
+        <label>이메일</label>
         <input
           type="email"
           name="email"
@@ -35,7 +35,7 @@ const Signin = () => {
           onChange={handleChange}
           required
         />
-        <label>Password</label>
+        <label>비밀번호</label>
         <input
           type="password"
           name="password"
@@ -43,7 +43,7 @@ const Signin = () => {
           onChange={handleChange}
           required
         />
-        <label>Confirm Password</label>
+        <label>비밀번호 확인</label>
         <input
           type="password"
           name="confirmPassword"
@@ -51,10 +51,10 @@ const Signin = () => {
           onChange={handleChange}
           required
         />
-        <button type="submit">Sign up</button>
+        <button type="submit">회원가입</button>
       </form>
       <p>
-        Already have an account? <Link to="/login">Login</Link>
+        이미 계정이 있으신가요? <Link to="/login">Login</Link>
       </p>
     </div>
   );

@@ -14,7 +14,7 @@ const Header = () => {
       <input type="text" placeholder=" SEARCH and CATCH your JOB!" />
       <input type="button" value="검색" />
 
-      <button><Link style={{ textDecorationLine: 'none' }} to="/Login">LOG IN</Link></button>
+      <button><Link style={{ textDecorationLine: 'none' }} to="/Login">CatchLion LOGIN</Link></button>
     </header>
   );
 };
