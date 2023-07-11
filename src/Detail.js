@@ -50,11 +50,12 @@ const Detail = () => {
       </Title>
       <div className="DetailsContainer">
         <div className="intro">
-          <p>{detailInfo.jobId}</p>
+          <p>{detailInfo.name}</p>
           <h3>{detailInfo.title}</h3>
         </div>
         <div className="ACinfo">
-          <p className="info">{detailInfo.description}</p>
+          <p className="info">지원 정보</p>
+          <p>{detailInfo.description}</p>
         </div>
         <div className="Coinfo">
           <p className="info">기업정보</p>
@@ -63,11 +64,6 @@ const Detail = () => {
         </div>
       </div>
       <br />
-      <Btndiv>
-        <Link to="/register">
-          <button id="detailbtn">즉시 지원</button>
-        </Link>
-      </Btndiv>
       <Deadlinediv>
         <p>
           해당 회사의 서류 마감일은{" "}
@@ -76,7 +72,12 @@ const Detail = () => {
           </span>
           입니다.
         </p>
-      </Deadlinediv>
+      </Deadlinediv><br/>
+      <Btndiv>
+        <Link to="/register">
+          <button id="detailbtn">즉시 지원</button>
+        </Link>
+      </Btndiv>
     </div>
   );
 };
