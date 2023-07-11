@@ -21,7 +21,7 @@ function App() {
           <Route path="/Detail/:jobId" element ={<Detail />} />
           <Route path="/Register" element ={<Register />} />
           <Route path="/Login" element ={<Login />} />
-          <Route path="/Signin" element={Signin } />
+          <Route path="/Signin" element={<Signin />} />
         </Routes>
     </div>
   );
