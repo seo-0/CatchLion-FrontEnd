@@ -4,7 +4,7 @@
 	<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=CATCHLION%20Project&fontSize=90" />	
 </div>
 <div align=center>
-	<h3>📚 2023 1학기 클라우드 컴퓨팅 프로젝트 📚</h3>
+	<h3>📚 LIKELION 멋쟁이사자처럼 채용공고서비스 프로젝트 📚</h3>
 	<p>✨ Platforms & Languages ✨</p>
 </div>
 <div align="center">
