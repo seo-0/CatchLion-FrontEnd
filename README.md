@@ -1,7 +1,7 @@
 # CatchLion-FrontEnd
 멋쟁이사자처럼 채용공고서비스 :: &lt;사자를 잡아라!>
 <div align=center>
-	<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=MosyMovie%20Project&fontSize=90" />	
+	<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=CATCHLION%20Project&fontSize=90" />	
 </div>
 <div align=center>
 	<h3>📚 2023 1학기 클라우드 컴퓨팅 프로젝트 📚</h3>
